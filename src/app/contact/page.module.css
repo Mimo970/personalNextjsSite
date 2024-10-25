@@ -1,0 +1,119 @@
+ 
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: semi-transparent background */
+  z-index: 1000;
+}
+
+.loadingText {
+  color: white;
+  font-size: 2rem;
+  animation: loadingDots 1.5s infinite;
+}
+
+ 
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px; /* Limit form width */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+ }
+
+.input,
+.textArea {
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid #bbb;
+  outline: none;
+  color: #787878;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.input.dark:focus{
+  color: rgb(255, 255, 255);
+}
+ .input.light:focus{
+  color: rgb(0, 0, 0);
+}
+
+ 
+.textArea.dark:focus {
+  border-color: #1518c8;
+  color: white;
+}
+.textArea.light:focus {
+  border-color: #1518c8;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .input,
+  .textArea {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .form {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .input,
+  .textArea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .form {
+    padding: 10px;
+  }
+}
