@@ -105,10 +105,10 @@ import styles from "./page.module.css";
 import Button from "@/components/Button/Button";
 import toast, { Toaster } from "react-hot-toast";
 
-export const metadata = {
-  title: "My Contact Information",
-  description: "This is Contact Page",
-};
+// export const metadata = {
+//   title: "My Contact Information",
+//   description: "This is Contact Page",
+// };
 
 const Contact = () => {
   const [formData, setFormData] = useState({
