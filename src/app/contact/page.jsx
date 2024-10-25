@@ -171,7 +171,7 @@ const Contact = () => {
   return (
     <div className={styles.container}>
       <Toaster position="top-right" />
-      <h1 className={styles.title}>Let's Keep in Touch</h1>
+      <h1 className={styles.title}>Let&#39;s Keep in Touch</h1>
       <div className={styles.content}>
         <form className={styles.form} onSubmit={handleSubmit}>
           <input
